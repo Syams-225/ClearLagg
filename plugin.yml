@@ -1,0 +1,18 @@
+name: ClearLagg
+main: ClearLagg\Loader
+version: 1.0.0
+api: [3.0.0, 3.0.0-ALPHA7, 3.0.0-ALPHA8, 3.0.0-ALPHA9, 4.0.0]
+author: Syams225
+description: "ClearLagg for PocketMine Servers"
+permissions:
+  clearlagg:
+    default: false
+    description: "Allows access to all ClearLagg features."
+    children:
+      clearlagg.command:
+        default: false
+        description: "Allows access to all ClearLagg commands."
+        children:  
+          clearlagg.command.clearlagg:
+            default: op
+            description: "Allows access to the clearlagg command."
